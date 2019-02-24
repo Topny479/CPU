@@ -1,0 +1,23 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../CPU28.srcs/sources_1/imports/src/ALU.v" \
+"../../../../CPU28.srcs/sources_1/imports/src/ALU_Controller.v" \
+"../../../../CPU28.srcs/sources_1/imports/src/CLK.v" \
+"../../../../CPU28.srcs/sources_1/imports/src/COUNT.v" \
+"../../../../CPU28.srcs/sources_1/imports/src/ClockDivider.v" \
+"../../../../CPU28.srcs/sources_1/imports/src/Controller.v" \
+"../../../../CPU28.srcs/sources_1/imports/src/Display.v" \
+"../../../../CPU28.srcs/sources_1/imports/src/LEDdata_Store.v" \
+"../../../../CPU28.srcs/sources_1/imports/src/MUX.v" \
+"../../../../CPU28.srcs/sources_1/imports/src/PC.v" \
+"../../../../CPU28.srcs/sources_1/imports/src/RAM.v" \
+"../../../../CPU28.srcs/sources_1/imports/src/RegFile.v" \
+"../../../../CPU28.srcs/sources_1/imports/src/Rom.v" \
+"../../../../CPU28.srcs/sources_1/imports/src/Sig_Gen.v" \
+"../../../../CPU28.srcs/sources_1/imports/src/DataPath.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

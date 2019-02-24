@@ -1,0 +1,8 @@
+0.6
+2017.4
+Dec 15 2017
+21:07:18
+C:/Users/jyh/Desktop/simpleCPU/project_1/project_1.sim/sim_1/behav/xsim/glbl.v,1513215259,verilog,,,,glbl,,,,,,,,
+C:/Users/jyh/Desktop/simpleCPU/project_1/project_1.srcs/sim_1/new/PC_sim.v,1550581528,verilog,,,,PC_sim,,,,,,,,
+C:/Users/jyh/Desktop/simpleCPU/project_1/project_1.srcs/sources_1/imports/Desktop/MUX.v,1550542979,verilog,,C:/Users/jyh/Desktop/simpleCPU/project_1/project_1.srcs/sources_1/new/pc.v,,mux2_1_16bit;mux2_1_1bit;mux2_1_32bit;mux2_1_5bit,,,,,,,,
+C:/Users/jyh/Desktop/simpleCPU/project_1/project_1.srcs/sources_1/new/pc.v,1550643083,verilog,,C:/Users/jyh/Desktop/simpleCPU/project_1/project_1.srcs/sim_1/new/PC_sim.v,,PC;testPC,,,,,,,,

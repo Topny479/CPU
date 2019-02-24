@@ -1,0 +1,321 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Thu Feb 21 10:54:37 2019
+| Host         : HUAWEI-5X running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file DataPath_control_sets_placed.rpt
+| Design       : DataPath
+| Device       : xc7a100t
+-------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |   261 |
+| Unused register locations in slices containing registers |     7 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              18 |            6 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |            8319 |         3836 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++----------------------+---------------------------------+---------------------------------+------------------+----------------+
+|     Clock Signal     |          Enable Signal          |         Set/Reset Signal        | Slice Load Count | Bel Load Count |
++----------------------+---------------------------------+---------------------------------+------------------+----------------+
+|  clk100Mhz_IBUF_BUFG |                                 |                                 |                6 |             18 |
+|  clk100Mhz_IBUF_BUFG | clk/clk_div/counter[31]_i_2_n_0 | clk/clk_div/counter[31]_i_1_n_0 |                8 |             31 |
+|  clk1hz_BUFG         | regFile/LEDdata_reg[31]         | regFile/LEDdata_reg[0]          |               13 |             32 |
+|  clk1hz_BUFG         | pc/E[0]                         | rst_IBUF                        |               20 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[0][31]_1[0]          | rst_IBUF                        |               24 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[116][31][0]          | rst_IBUF                        |               15 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[103][31][0]          | rst_IBUF                        |               12 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[112][31][0]          | rst_IBUF                        |               11 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[105][31][0]          | rst_IBUF                        |               13 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[128][31][0]          | rst_IBUF                        |               13 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[125][31][0]          | rst_IBUF                        |               16 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[109][31][0]          | rst_IBUF                        |               17 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[11][31][0]           | rst_IBUF                        |               21 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[108][31][0]          | rst_IBUF                        |               16 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[121][31][0]          | rst_IBUF                        |               15 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[115][31][0]          | rst_IBUF                        |               17 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[113][31][0]          | rst_IBUF                        |               13 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[126][31]_0[0]        | rst_IBUF                        |               15 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[110][31][0]          | rst_IBUF                        |               11 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[111][31][0]          | rst_IBUF                        |               12 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[127][31][0]          | rst_IBUF                        |               20 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[119][31][0]          | rst_IBUF                        |               14 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[123][31][0]          | rst_IBUF                        |               14 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[104][31][0]          | rst_IBUF                        |               17 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[101][31][0]          | rst_IBUF                        |               10 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[106][31][0]          | rst_IBUF                        |               13 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[100][31][0]          | rst_IBUF                        |               13 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[107][31][0]          | rst_IBUF                        |               11 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[10][31][0]           | rst_IBUF                        |               20 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[114][31][0]          | rst_IBUF                        |               16 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[117][31][0]          | rst_IBUF                        |               17 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[118][31][0]          | rst_IBUF                        |               19 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[102][31][0]          | rst_IBUF                        |               13 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[120][31][0]          | rst_IBUF                        |               13 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[122][31][0]          | rst_IBUF                        |                9 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[124][31][0]          | rst_IBUF                        |               11 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[153][31][0]          | rst_IBUF                        |               10 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[131][31][0]          | rst_IBUF                        |               10 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[167][31][0]          | rst_IBUF                        |               15 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[171][31][0]          | rst_IBUF                        |               17 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[179][31][0]          | rst_IBUF                        |                6 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[162][31][0]          | rst_IBUF                        |               12 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[135][31][0]          | rst_IBUF                        |               13 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[12][31][0]           | rst_IBUF                        |               20 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[130][31][0]          | rst_IBUF                        |               14 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[133][31][0]          | rst_IBUF                        |               12 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[129][31][0]          | rst_IBUF                        |                9 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[137][31][0]          | rst_IBUF                        |               15 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[143][31][0]          | rst_IBUF                        |               17 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[144][31][0]          | rst_IBUF                        |               19 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[145][31][0]          | rst_IBUF                        |               17 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[134][31][0]          | rst_IBUF                        |               16 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[132][31][0]          | rst_IBUF                        |               10 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[150][31][0]          | rst_IBUF                        |               12 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[158][31][0]          | rst_IBUF                        |               17 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[139][31][0]          | rst_IBUF                        |               18 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[159][31][0]          | rst_IBUF                        |               16 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[15][31][0]           | rst_IBUF                        |               18 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[163][31][0]          | rst_IBUF                        |               14 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[168][31][0]          | rst_IBUF                        |               14 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[142][31][0]          | rst_IBUF                        |               14 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[166][31][0]          | rst_IBUF                        |                9 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[146][31][0]          | rst_IBUF                        |               15 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[141][31][0]          | rst_IBUF                        |               16 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[13][31][0]           | rst_IBUF                        |               22 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[147][31][0]          | rst_IBUF                        |               14 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[148][31][0]          | rst_IBUF                        |               15 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[156][31][0]          | rst_IBUF                        |               10 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[152][31][0]          | rst_IBUF                        |               15 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[164][31][0]          | rst_IBUF                        |                7 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[151][31][0]          | rst_IBUF                        |               17 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[165][31][0]          | rst_IBUF                        |               14 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[16][31][0]           | rst_IBUF                        |               20 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[138][31][0]          | rst_IBUF                        |               17 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[161][31][0]          | rst_IBUF                        |               13 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[140][31][0]          | rst_IBUF                        |               16 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[172][31][0]          | rst_IBUF                        |               15 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[149][31][0]          | rst_IBUF                        |               10 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[176][31][0]          | rst_IBUF                        |               14 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[14][31][0]           | rst_IBUF                        |               17 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[155][31][0]          | rst_IBUF                        |               14 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[174][31][0]          | rst_IBUF                        |               16 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[154][31][0]          | rst_IBUF                        |               17 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[178][31][0]          | rst_IBUF                        |                7 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[157][31][0]          | rst_IBUF                        |               15 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[160][31][0]          | rst_IBUF                        |               14 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[170][31][0]          | rst_IBUF                        |                9 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[169][31][0]          | rst_IBUF                        |                8 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[173][31][0]          | rst_IBUF                        |               10 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[177][31][0]          | rst_IBUF                        |               11 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[175][31][0]          | rst_IBUF                        |               15 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[136][31][0]          | rst_IBUF                        |               14 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[211][31][0]          | rst_IBUF                        |                7 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[212][31][0]          | rst_IBUF                        |                7 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[213][31][0]          | rst_IBUF                        |                8 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[181][31][0]          | rst_IBUF                        |                9 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[214][31][0]          | rst_IBUF                        |               10 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[215][31][0]          | rst_IBUF                        |               10 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[216][31][0]          | rst_IBUF                        |               12 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[182][31][0]          | rst_IBUF                        |               12 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[17][31][0]           | rst_IBUF                        |               21 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[195][31][0]          | rst_IBUF                        |               10 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[192][31][0]          | rst_IBUF                        |               14 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[207][31][0]          | rst_IBUF                        |               14 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[193][31][0]          | rst_IBUF                        |               12 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[194][31][0]          | rst_IBUF                        |               13 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[205][31][0]          | rst_IBUF                        |                8 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[208][31][0]          | rst_IBUF                        |               13 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[180][31][0]          | rst_IBUF                        |               10 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[20][31][0]           | rst_IBUF                        |               23 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[191][31][0]          | rst_IBUF                        |               17 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[188][31][0]          | rst_IBUF                        |               11 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[197][31][0]          | rst_IBUF                        |                8 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[189][31][0]          | rst_IBUF                        |               12 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[187][31][0]          | rst_IBUF                        |               17 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[18][31][0]           | rst_IBUF                        |               20 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[196][31][0]          | rst_IBUF                        |                9 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[198][31][0]          | rst_IBUF                        |                9 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[186][31][0]          | rst_IBUF                        |               12 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[190][31][0]          | rst_IBUF                        |               12 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[202][31][0]          | rst_IBUF                        |               15 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[210][31][0]          | rst_IBUF                        |               12 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[184][31][0]          | rst_IBUF                        |               13 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[199][31][0]          | rst_IBUF                        |               12 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[183][31][0]          | rst_IBUF                        |               12 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[185][31][0]          | rst_IBUF                        |               13 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[19][31][0]           | rst_IBUF                        |               20 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[200][31][0]          | rst_IBUF                        |               11 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[201][31][0]          | rst_IBUF                        |                9 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[204][31][0]          | rst_IBUF                        |               17 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[209][31][0]          | rst_IBUF                        |                8 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[1][31][0]            | rst_IBUF                        |               23 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[203][31][0]          | rst_IBUF                        |               11 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[206][31][0]          | rst_IBUF                        |               16 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[247][31][0]          | rst_IBUF                        |               15 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[29][31][0]           | rst_IBUF                        |               19 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[31][31][0]           | rst_IBUF                        |               24 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[238][31][0]          | rst_IBUF                        |               18 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[30][31][0]           | rst_IBUF                        |               23 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[32][31][0]           | rst_IBUF                        |               16 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[228][31][0]          | rst_IBUF                        |               11 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[244][31][0]          | rst_IBUF                        |               14 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[221][31][0]          | rst_IBUF                        |               10 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[242][31][0]          | rst_IBUF                        |               16 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[237][31][0]          | rst_IBUF                        |               14 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[232][31][0]          | rst_IBUF                        |               15 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[239][31][0]          | rst_IBUF                        |               19 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[246][31][0]          | rst_IBUF                        |               15 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[33][31][0]           | rst_IBUF                        |               16 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[233][31][0]          | rst_IBUF                        |               12 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[24][31][0]           | rst_IBUF                        |               20 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[34][31][0]           | rst_IBUF                        |               19 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[229][31][0]          | rst_IBUF                        |               13 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[225][31][0]          | rst_IBUF                        |                8 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[217][31][0]          | rst_IBUF                        |                7 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[224][31][0]          | rst_IBUF                        |               13 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[226][31][0]          | rst_IBUF                        |               10 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[243][31][0]          | rst_IBUF                        |               14 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[2][31][0]            | rst_IBUF                        |               21 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[25][31][0]           | rst_IBUF                        |               22 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[36][31][0]           | rst_IBUF                        |               12 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[39][31][0]           | rst_IBUF                        |               16 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[235][31][0]          | rst_IBUF                        |               15 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[231][31][0]          | rst_IBUF                        |               16 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[27][31][0]           | rst_IBUF                        |               18 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[252][31][0]          | rst_IBUF                        |               12 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[3][31][0]            | rst_IBUF                        |               17 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[250][31][0]          | rst_IBUF                        |               13 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[248][31][0]          | rst_IBUF                        |               19 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[38][31][0]           | rst_IBUF                        |               19 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[40][31][0]           | rst_IBUF                        |               17 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[37][31][0]           | rst_IBUF                        |               17 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[41][31][0]           | rst_IBUF                        |               14 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[42][31][0]           | rst_IBUF                        |               24 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[223][31][0]          | rst_IBUF                        |               14 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[43][31][0]           | rst_IBUF                        |               20 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[254][31][0]          | rst_IBUF                        |               11 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[44][31][0]           | rst_IBUF                        |               19 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[251][31][0]          | rst_IBUF                        |               11 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[236][31][0]          | rst_IBUF                        |               13 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[35][31][0]           | rst_IBUF                        |               15 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[22][31][0]           | rst_IBUF                        |               22 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[219][31][0]          | rst_IBUF                        |               10 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[227][31][0]          | rst_IBUF                        |               14 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[234][31][0]          | rst_IBUF                        |               10 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[23][31][0]           | rst_IBUF                        |               22 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[230][31][0]          | rst_IBUF                        |               11 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[218][31][0]          | rst_IBUF                        |                9 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[21][31][0]           | rst_IBUF                        |               24 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[241][31][0]          | rst_IBUF                        |               14 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[222][31][0]          | rst_IBUF                        |               12 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[220][31][0]          | rst_IBUF                        |               13 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[249][31][0]          | rst_IBUF                        |               10 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[240][31][0]          | rst_IBUF                        |               20 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[253][31][0]          | rst_IBUF                        |               12 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[26][31][0]           | rst_IBUF                        |               21 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[245][31][0]          | rst_IBUF                        |               16 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[28][31][0]           | rst_IBUF                        |               23 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[67][31][0]           | rst_IBUF                        |                8 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[65][31][0]           | rst_IBUF                        |               14 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[72][31][0]           | rst_IBUF                        |               14 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[73][31][0]           | rst_IBUF                        |               13 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[49][31][0]           | rst_IBUF                        |               19 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[58][31][0]           | rst_IBUF                        |               19 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[75][31][0]           | rst_IBUF                        |               11 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[79][31][0]           | rst_IBUF                        |               19 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[83][31][0]           | rst_IBUF                        |               12 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[53][31][0]           | rst_IBUF                        |               18 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[55][31][0]           | rst_IBUF                        |               17 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[4][31][0]            | rst_IBUF                        |               19 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[64][31][0]           | rst_IBUF                        |               13 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[69][31][0]           | rst_IBUF                        |               13 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[6][31][0]            | rst_IBUF                        |               24 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[45][31][0]           | rst_IBUF                        |               17 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[5][31][0]            | rst_IBUF                        |               21 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[70][31][0]           | rst_IBUF                        |               12 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[54][31][0]           | rst_IBUF                        |               18 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[57][31][0]           | rst_IBUF                        |               17 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[61][31][0]           | rst_IBUF                        |               20 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[56][31][0]           | rst_IBUF                        |               18 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[78][31][0]           | rst_IBUF                        |               12 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[59][31][0]           | rst_IBUF                        |               16 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[71][31][0]           | rst_IBUF                        |               14 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[7][31][0]            | rst_IBUF                        |               21 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[80][31][0]           | rst_IBUF                        |               17 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[81][31][0]           | rst_IBUF                        |               13 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[46][31][0]           | rst_IBUF                        |               21 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[77][31][0]           | rst_IBUF                        |               12 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[82][31][0]           | rst_IBUF                        |               11 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[84][31][0]           | rst_IBUF                        |               14 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[48][31][0]           | rst_IBUF                        |               22 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[68][31][0]           | rst_IBUF                        |               12 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[63][31][0]           | rst_IBUF                        |               19 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[62][31][0]           | rst_IBUF                        |               21 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[76][31][0]           | rst_IBUF                        |               18 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[85][31][0]           | rst_IBUF                        |               14 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[86][31][0]           | rst_IBUF                        |               14 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[74][31][0]           | rst_IBUF                        |               14 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[51][31][0]           | rst_IBUF                        |               23 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[66][31][0]           | rst_IBUF                        |               13 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[60][31][0]           | rst_IBUF                        |               14 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[50][31][0]           | rst_IBUF                        |               14 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[52][31][0]           | rst_IBUF                        |               13 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[47][31][0]           | rst_IBUF                        |               24 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[90][31][0]           | rst_IBUF                        |               11 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[93][31][0]           | rst_IBUF                        |               15 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[95][31][0]           | rst_IBUF                        |               19 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[97][31][0]           | rst_IBUF                        |                9 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[92][31][0]           | rst_IBUF                        |               19 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[98][31][0]           | rst_IBUF                        |               17 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[8][31][0]            | rst_IBUF                        |               21 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[9][31][0]            | rst_IBUF                        |               23 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[96][31][0]           | rst_IBUF                        |               10 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[87][31][0]           | rst_IBUF                        |               24 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[88][31][0]           | rst_IBUF                        |               15 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[89][31][0]           | rst_IBUF                        |               11 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[99][31][0]           | rst_IBUF                        |               18 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[91][31][0]           | rst_IBUF                        |               16 |             32 |
+|  clk1hz_BUFG         | pc/ram_reg[94][31][0]           | rst_IBUF                        |               20 |             32 |
+|  clk1hz_BUFG         | regFile/PC_reg[31][0]           | rst_IBUF                        |               22 |             64 |
+|  clk1hz_BUFG         | pc/p_0_in                       |                                 |               12 |             96 |
++----------------------+---------------------------------+---------------------------------+------------------+----------------+
+
+
++--------+-----------------------+
+| Fanout | Number of ControlSets |
++--------+-----------------------+
+| 16+    |                   261 |
++--------+-----------------------+
+
+

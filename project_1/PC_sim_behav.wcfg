@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="PC_sim_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="PC_sim" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="1000000001fs"></ZoomEndTime>
+      <Cursor1Time time="165000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="155"></NameColumnWidth>
+      <ValueColumnWidth column_width="73"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="23" />
+   <wvobject fp_name="/PC_sim/branchPC" type="array">
+      <obj_property name="ElementShortName">branchPC[31:0]</obj_property>
+      <obj_property name="ObjectShortName">branchPC[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/PC_sim/Jaddr" type="array">
+      <obj_property name="ElementShortName">Jaddr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">Jaddr[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/PC_sim/R1" type="array">
+      <obj_property name="ElementShortName">R1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">R1[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/PC_sim/jal" type="logic">
+      <obj_property name="ElementShortName">jal</obj_property>
+      <obj_property name="ObjectShortName">jal</obj_property>
+   </wvobject>
+   <wvobject fp_name="/PC_sim/sys" type="logic">
+      <obj_property name="ElementShortName">sys</obj_property>
+      <obj_property name="ObjectShortName">sys</obj_property>
+   </wvobject>
+   <wvobject fp_name="/PC_sim/eq" type="logic">
+      <obj_property name="ElementShortName">eq</obj_property>
+      <obj_property name="ObjectShortName">eq</obj_property>
+   </wvobject>
+   <wvobject fp_name="/PC_sim/bne" type="logic">
+      <obj_property name="ElementShortName">bne</obj_property>
+      <obj_property name="ObjectShortName">bne</obj_property>
+   </wvobject>
+   <wvobject fp_name="/PC_sim/beq" type="logic">
+      <obj_property name="ElementShortName">beq</obj_property>
+      <obj_property name="ObjectShortName">beq</obj_property>
+   </wvobject>
+   <wvobject fp_name="/PC_sim/jmp" type="logic">
+      <obj_property name="ElementShortName">jmp</obj_property>
+      <obj_property name="ObjectShortName">jmp</obj_property>
+   </wvobject>
+   <wvobject fp_name="/PC_sim/jr" type="logic">
+      <obj_property name="ElementShortName">jr</obj_property>
+      <obj_property name="ObjectShortName">jr</obj_property>
+   </wvobject>
+   <wvobject fp_name="/PC_sim/eq34" type="logic">
+      <obj_property name="ElementShortName">eq34</obj_property>
+      <obj_property name="ObjectShortName">eq34</obj_property>
+   </wvobject>
+   <wvobject fp_name="/PC_sim/reset" type="logic">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/PC_sim/clock" type="logic">
+      <obj_property name="ElementShortName">clock</obj_property>
+      <obj_property name="ObjectShortName">clock</obj_property>
+   </wvobject>
+   <wvobject fp_name="/PC_sim/run" type="logic">
+      <obj_property name="ElementShortName">run</obj_property>
+      <obj_property name="ObjectShortName">run</obj_property>
+   </wvobject>
+   <wvobject fp_name="/PC_sim/nextPC" type="array">
+      <obj_property name="ElementShortName">nextPC[31:0]</obj_property>
+      <obj_property name="ObjectShortName">nextPC[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/PC_sim/pc" type="array">
+      <obj_property name="ElementShortName">pc[31:0]</obj_property>
+      <obj_property name="ObjectShortName">pc[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/PC_sim/totalCycle" type="array">
+      <obj_property name="ElementShortName">totalCycle[15:0]</obj_property>
+      <obj_property name="ObjectShortName">totalCycle[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/PC_sim/unconditionalJump" type="array">
+      <obj_property name="ElementShortName">unconditionalJump[15:0]</obj_property>
+      <obj_property name="ObjectShortName">unconditionalJump[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/PC_sim/conditionalSuccessfulJump" type="array">
+      <obj_property name="ElementShortName">conditionalSuccessfulJump[15:0]</obj_property>
+      <obj_property name="ObjectShortName">conditionalSuccessfulJump[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/PC_sim/testpc/branch" type="logic">
+      <obj_property name="ElementShortName">branch</obj_property>
+      <obj_property name="ObjectShortName">branch</obj_property>
+   </wvobject>
+   <wvobject fp_name="/PC_sim/testpc/C/out1" type="array">
+      <obj_property name="ElementShortName">out1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">out1[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/PC_sim/testpc/stage1" type="array">
+      <obj_property name="ElementShortName">stage1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">stage1[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/PC_sim/testpc/stage3" type="array">
+      <obj_property name="ElementShortName">stage3[31:0]</obj_property>
+      <obj_property name="ObjectShortName">stage3[31:0]</obj_property>
+   </wvobject>
+</wave_config>

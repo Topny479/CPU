@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1550716688">
+  <File Type="PA-TCL" Name="DataPath.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="DataPath_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="DataPath_reports.tcl"/>
+  <File Type="RDS-RDS" Name="DataPath.vds"/>
+  <File Type="RDS-UTIL" Name="DataPath_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="DataPath_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="DataPath.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="DataPath_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="DataPath_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/src/ALU.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../src/ALU.v"/>
+        <Attr Name="ImportTime" Val="1550624156"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/ALU_Controller.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../src/ALU_Controller.v"/>
+        <Attr Name="ImportTime" Val="1550562220"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/CLK.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../src/CLK.v"/>
+        <Attr Name="ImportTime" Val="1550575496"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/COUNT.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../src/COUNT.v"/>
+        <Attr Name="ImportTime" Val="1550574570"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/ClockDivider.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../src/ClockDivider.v"/>
+        <Attr Name="ImportTime" Val="1550660054"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/Controller.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../src/Controller.v"/>
+        <Attr Name="ImportTime" Val="1550646318"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/Display.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../src/Display.v"/>
+        <Attr Name="ImportTime" Val="1550661756"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/LEDdata_Store.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../src/LEDdata_Store.v"/>
+        <Attr Name="ImportTime" Val="1550627348"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/MUX.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../src/MUX.v"/>
+        <Attr Name="ImportTime" Val="1550569622"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/PC.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../src/PC.v"/>
+        <Attr Name="ImportTime" Val="1550645156"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/RAM.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../src/RAM.v"/>
+        <Attr Name="ImportTime" Val="1550651006"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/RegFile.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../src/RegFile.v"/>
+        <Attr Name="ImportTime" Val="1550538788"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/Rom.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../src/Rom.v"/>
+        <Attr Name="ImportTime" Val="1550647636"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/Sig_Gen.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../src/Sig_Gen.v"/>
+        <Attr Name="ImportTime" Val="1550630738"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/DataPath.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../src/DataPath.v"/>
+        <Attr Name="ImportTime" Val="1550660738"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="DataPath"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/src/Nexys4_DDR.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../src/Nexys4_DDR.xdc"/>
+        <Attr Name="ImportTime" Val="1550661048"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

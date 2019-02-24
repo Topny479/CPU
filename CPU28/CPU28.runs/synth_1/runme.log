@@ -1,0 +1,578 @@
+
+*** Running vivado
+    with args -log DataPath.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source DataPath.tcl
+
+
+****** Vivado v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source DataPath.tcl -notrace
+Command: synth_design -top DataPath -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 19836 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 389.422 ; gain = 98.523
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'DataPath' [C:/Users/jyh/Desktop/simpleCPU/CPU28/CPU28.srcs/sources_1/imports/src/DataPath.v:22]
+INFO: [Synth 8-638] synthesizing module 'CLK' [C:/Users/jyh/Desktop/simpleCPU/CPU28/CPU28.srcs/sources_1/imports/src/CLK.v:23]
+INFO: [Synth 8-638] synthesizing module 'ClockDivider' [C:/Users/jyh/Desktop/simpleCPU/CPU28/CPU28.srcs/sources_1/imports/src/ClockDivider.v:23]
+	Parameter DIVIDE bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'ClockDivider' (1#1) [C:/Users/jyh/Desktop/simpleCPU/CPU28/CPU28.srcs/sources_1/imports/src/ClockDivider.v:23]
+INFO: [Synth 8-256] done synthesizing module 'CLK' (2#1) [C:/Users/jyh/Desktop/simpleCPU/CPU28/CPU28.srcs/sources_1/imports/src/CLK.v:23]
+INFO: [Synth 8-638] synthesizing module 'Rom' [C:/Users/jyh/Desktop/simpleCPU/CPU28/CPU28.srcs/sources_1/imports/src/Rom.v:10]
+	Parameter ADDRESS_WIDTH bound to: 32 - type: integer 
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Rom' (3#1) [C:/Users/jyh/Desktop/simpleCPU/CPU28/CPU28.srcs/sources_1/imports/src/Rom.v:10]
+INFO: [Synth 8-638] synthesizing module 'Controller' [C:/Users/jyh/Desktop/simpleCPU/CPU28/CPU28.srcs/sources_1/imports/src/Controller.v:23]
+INFO: [Synth 8-638] synthesizing module 'ALU_Controller' [C:/Users/jyh/Desktop/simpleCPU/CPU28/CPU28.srcs/sources_1/imports/src/ALU_Controller.v:23]
+INFO: [Synth 8-256] done synthesizing module 'ALU_Controller' (4#1) [C:/Users/jyh/Desktop/simpleCPU/CPU28/CPU28.srcs/sources_1/imports/src/ALU_Controller.v:23]
+INFO: [Synth 8-638] synthesizing module 'Sig_Gen' [C:/Users/jyh/Desktop/simpleCPU/CPU28/CPU28.srcs/sources_1/imports/src/Sig_Gen.v:23]
+INFO: [Synth 8-256] done synthesizing module 'Sig_Gen' (5#1) [C:/Users/jyh/Desktop/simpleCPU/CPU28/CPU28.srcs/sources_1/imports/src/Sig_Gen.v:23]
+INFO: [Synth 8-256] done synthesizing module 'Controller' (6#1) [C:/Users/jyh/Desktop/simpleCPU/CPU28/CPU28.srcs/sources_1/imports/src/Controller.v:23]
+INFO: [Synth 8-638] synthesizing module 'mux2_1_32bit' [C:/Users/jyh/Desktop/simpleCPU/CPU28/CPU28.srcs/sources_1/imports/src/MUX.v:68]
+INFO: [Synth 8-256] done synthesizing module 'mux2_1_32bit' (7#1) [C:/Users/jyh/Desktop/simpleCPU/CPU28/CPU28.srcs/sources_1/imports/src/MUX.v:68]
+INFO: [Synth 8-638] synthesizing module 'PC' [C:/Users/jyh/Desktop/simpleCPU/CPU28/CPU28.srcs/sources_1/imports/src/PC.v:23]
+INFO: [Synth 8-256] done synthesizing module 'PC' (8#1) [C:/Users/jyh/Desktop/simpleCPU/CPU28/CPU28.srcs/sources_1/imports/src/PC.v:23]
+INFO: [Synth 8-638] synthesizing module 'COUNT' [C:/Users/jyh/Desktop/simpleCPU/CPU28/CPU28.srcs/sources_1/imports/src/COUNT.v:23]
+INFO: [Synth 8-256] done synthesizing module 'COUNT' (9#1) [C:/Users/jyh/Desktop/simpleCPU/CPU28/CPU28.srcs/sources_1/imports/src/COUNT.v:23]
+INFO: [Synth 8-638] synthesizing module 'LEDdata_Store' [C:/Users/jyh/Desktop/simpleCPU/CPU28/CPU28.srcs/sources_1/imports/src/LEDdata_Store.v:23]
+INFO: [Synth 8-256] done synthesizing module 'LEDdata_Store' (10#1) [C:/Users/jyh/Desktop/simpleCPU/CPU28/CPU28.srcs/sources_1/imports/src/LEDdata_Store.v:23]
+INFO: [Synth 8-638] synthesizing module 'Display' [C:/Users/jyh/Desktop/simpleCPU/CPU28/CPU28.srcs/sources_1/imports/src/Display.v:23]
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "1" *) [C:/Users/jyh/Desktop/simpleCPU/CPU28/CPU28.srcs/sources_1/imports/src/Display.v:27]
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "1" *) [C:/Users/jyh/Desktop/simpleCPU/CPU28/CPU28.srcs/sources_1/imports/src/Display.v:28]
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "1" *) [C:/Users/jyh/Desktop/simpleCPU/CPU28/CPU28.srcs/sources_1/imports/src/Display.v:29]
+INFO: [Synth 8-226] default block is never used [C:/Users/jyh/Desktop/simpleCPU/CPU28/CPU28.srcs/sources_1/imports/src/Display.v:50]
+INFO: [Synth 8-226] default block is never used [C:/Users/jyh/Desktop/simpleCPU/CPU28/CPU28.srcs/sources_1/imports/src/Display.v:90]
+INFO: [Synth 8-226] default block is never used [C:/Users/jyh/Desktop/simpleCPU/CPU28/CPU28.srcs/sources_1/imports/src/Display.v:130]
+INFO: [Synth 8-256] done synthesizing module 'Display' (11#1) [C:/Users/jyh/Desktop/simpleCPU/CPU28/CPU28.srcs/sources_1/imports/src/Display.v:23]
+INFO: [Synth 8-638] synthesizing module 'mux2_1_5bit' [C:/Users/jyh/Desktop/simpleCPU/CPU28/CPU28.srcs/sources_1/imports/src/MUX.v:40]
+INFO: [Synth 8-256] done synthesizing module 'mux2_1_5bit' (12#1) [C:/Users/jyh/Desktop/simpleCPU/CPU28/CPU28.srcs/sources_1/imports/src/MUX.v:40]
+INFO: [Synth 8-638] synthesizing module 'RegFile' [C:/Users/jyh/Desktop/simpleCPU/CPU28/CPU28.srcs/sources_1/imports/src/RegFile.v:23]
+INFO: [Synth 8-256] done synthesizing module 'RegFile' (13#1) [C:/Users/jyh/Desktop/simpleCPU/CPU28/CPU28.srcs/sources_1/imports/src/RegFile.v:23]
+INFO: [Synth 8-638] synthesizing module 'ALU' [C:/Users/jyh/Desktop/simpleCPU/CPU28/CPU28.srcs/sources_1/imports/src/ALU.v:23]
+INFO: [Synth 8-256] done synthesizing module 'ALU' (14#1) [C:/Users/jyh/Desktop/simpleCPU/CPU28/CPU28.srcs/sources_1/imports/src/ALU.v:23]
+INFO: [Synth 8-638] synthesizing module 'RAM' [C:/Users/jyh/Desktop/simpleCPU/CPU28/CPU28.srcs/sources_1/imports/src/RAM.v:23]
+	Parameter RAM_SIZE bound to: 256 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'RAM' (15#1) [C:/Users/jyh/Desktop/simpleCPU/CPU28/CPU28.srcs/sources_1/imports/src/RAM.v:23]
+INFO: [Synth 8-638] synthesizing module 'mux4_1_8bit' [C:/Users/jyh/Desktop/simpleCPU/CPU28/CPU28.srcs/sources_1/imports/src/MUX.v:53]
+WARNING: [Synth 8-567] referenced signal 'c' should be on the sensitivity list [C:/Users/jyh/Desktop/simpleCPU/CPU28/CPU28.srcs/sources_1/imports/src/MUX.v:57]
+WARNING: [Synth 8-567] referenced signal 'd' should be on the sensitivity list [C:/Users/jyh/Desktop/simpleCPU/CPU28/CPU28.srcs/sources_1/imports/src/MUX.v:57]
+INFO: [Synth 8-256] done synthesizing module 'mux4_1_8bit' (16#1) [C:/Users/jyh/Desktop/simpleCPU/CPU28/CPU28.srcs/sources_1/imports/src/MUX.v:53]
+INFO: [Synth 8-256] done synthesizing module 'DataPath' (17#1) [C:/Users/jyh/Desktop/simpleCPU/CPU28/CPU28.srcs/sources_1/imports/src/DataPath.v:22]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 455.871 ; gain = 164.973
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 455.871 ; gain = 164.973
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/jyh/Desktop/simpleCPU/CPU28/CPU28.srcs/constrs_1/imports/src/Nexys4_DDR.xdc]
+Finished Parsing XDC File [C:/Users/jyh/Desktop/simpleCPU/CPU28/CPU28.srcs/constrs_1/imports/src/Nexys4_DDR.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/jyh/Desktop/simpleCPU/CPU28/CPU28.srcs/constrs_1/imports/src/Nexys4_DDR.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/DataPath_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/DataPath_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 819.605 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 819.605 ; gain = 528.707
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 819.605 ; gain = 528.707
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 819.605 ; gain = 528.707
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "clockOut" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "counter" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "result" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-6014] Unused sequential element totalCycle_reg was removed.  [C:/Users/jyh/Desktop/simpleCPU/CPU28/CPU28.srcs/sources_1/imports/src/COUNT.v:35]
+WARNING: [Synth 8-6014] Unused sequential element unconditionalJump_reg was removed.  [C:/Users/jyh/Desktop/simpleCPU/CPU28/CPU28.srcs/sources_1/imports/src/COUNT.v:36]
+WARNING: [Synth 8-6014] Unused sequential element conditionalSuccessfulJump_reg was removed.  [C:/Users/jyh/Desktop/simpleCPU/CPU28/CPU28.srcs/sources_1/imports/src/COUNT.v:37]
+WARNING: [Synth 8-6014] Unused sequential element cnt_scan_reg was removed.  [C:/Users/jyh/Desktop/simpleCPU/CPU28/CPU28.srcs/sources_1/imports/src/Display.v:38]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/jyh/Desktop/simpleCPU/CPU28/CPU28.srcs/sources_1/imports/src/ALU.v:36]
+INFO: [Synth 8-5546] ROM "ram_reg[255]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[254]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[253]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[252]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[251]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[250]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[249]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[248]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[247]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[246]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[245]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[244]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[243]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[242]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[241]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[240]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[239]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[238]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[237]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[236]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[235]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[234]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[233]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[232]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[231]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[230]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[229]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[228]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[227]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[226]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[225]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[224]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[223]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[222]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[221]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[220]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[219]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[218]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[217]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[216]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[215]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[214]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[213]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[212]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[211]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[210]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[209]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[208]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[207]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[206]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[205]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[204]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[203]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[202]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[201]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[200]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[199]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[198]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[197]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[196]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[195]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[194]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[193]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[192]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[191]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[190]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[189]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[188]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[187]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[186]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[185]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[184]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[183]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[182]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[181]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[180]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[179]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[178]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[177]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[176]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[175]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[174]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[173]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[172]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[171]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[170]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[169]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[168]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[167]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[166]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[165]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[164]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[163]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[162]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[161]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[160]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[159]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[158]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[157]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[156]" won't be mapped to RAM because it is too sparse
+INFO: [Common 17-14] Message 'Synth 8-5546' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:32 ; elapsed = 00:00:36 . Memory (MB): peak = 819.605 ; gain = 528.707
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 3     
+	   3 Input     32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 259   
+	                1 Bit    Registers := 1     
++---Multipliers : 
+	                32x32  Multipliers := 1     
++---RAMs : 
+	             1024 Bit         RAMs := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 15    
+	 285 Input     32 Bit        Muxes := 1     
+	  14 Input     32 Bit        Muxes := 1     
+	   8 Input      8 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 5     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 258   
+	   3 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module DataPath 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module ClockDivider 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+Module Rom 
+Detailed RTL Component Info : 
++---Muxes : 
+	 285 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 1     
+Module mux2_1_32bit 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module PC 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+Module LEDdata_Store 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module Display 
+Detailed RTL Component Info : 
++---Muxes : 
+	   8 Input      8 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+Module mux2_1_5bit 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 1     
+Module RegFile 
+Detailed RTL Component Info : 
++---RAMs : 
+	             1024 Bit         RAMs := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+Module ALU 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Multipliers : 
+	                32x32  Multipliers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	  14 Input     32 Bit        Muxes := 1     
+Module RAM 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 256   
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 256   
+Module mux4_1_8bit 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      8 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/jyh/Desktop/simpleCPU/CPU28/CPU28.srcs/sources_1/imports/src/ALU.v:47]
+DSP Report: Generating DSP result10, operation Mode is: A*B.
+DSP Report: operator result10 is absorbed into DSP result10.
+DSP Report: operator result10 is absorbed into DSP result10.
+DSP Report: Generating DSP result10, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator result10 is absorbed into DSP result10.
+DSP Report: operator result10 is absorbed into DSP result10.
+DSP Report: Generating DSP result10, operation Mode is: A*B.
+DSP Report: operator result10 is absorbed into DSP result10.
+DSP Report: operator result10 is absorbed into DSP result10.
+DSP Report: Generating DSP result10, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator result10 is absorbed into DSP result10.
+DSP Report: operator result10 is absorbed into DSP result10.
+INFO: [Synth 8-5545] ROM "clk/clk_div/counter" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-6014] Unused sequential element count/totalCycle_reg was removed.  [C:/Users/jyh/Desktop/simpleCPU/CPU28/CPU28.srcs/sources_1/imports/src/COUNT.v:35]
+WARNING: [Synth 8-6014] Unused sequential element count/unconditionalJump_reg was removed.  [C:/Users/jyh/Desktop/simpleCPU/CPU28/CPU28.srcs/sources_1/imports/src/COUNT.v:36]
+WARNING: [Synth 8-6014] Unused sequential element count/conditionalSuccessfulJump_reg was removed.  [C:/Users/jyh/Desktop/simpleCPU/CPU28/CPU28.srcs/sources_1/imports/src/COUNT.v:37]
+WARNING: [Synth 8-6014] Unused sequential element display/cnt_scan_reg was removed.  [C:/Users/jyh/Desktop/simpleCPU/CPU28/CPU28.srcs/sources_1/imports/src/Display.v:38]
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:11:02 ; elapsed = 00:11:22 . Memory (MB): peak = 819.605 ; gain = 528.707
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++------------+---------------------+-----------+----------------------+---------------+
+|Module Name | RTL Object          | Inference | Size (Depth x Width) | Primitives    | 
++------------+---------------------+-----------+----------------------+---------------+
+|DataPath    | regFile/regfile_reg | Implied   | 32 x 32              | RAM32M x 12   | 
++------------+---------------------+-----------+----------------------+---------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+
+DSP: Preliminary Mapping  Report (see note below)
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|ALU         | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ALU         | (PCIN>>17)+A*B | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ALU         | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ALU         | (PCIN>>17)+A*B | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:11:21 ; elapsed = 00:11:42 . Memory (MB): peak = 921.855 ; gain = 630.957
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:13:01 ; elapsed = 00:13:24 . Memory (MB): peak = 932.383 ; gain = 641.484
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping  Report
++------------+---------------------+-----------+----------------------+---------------+
+|Module Name | RTL Object          | Inference | Size (Depth x Width) | Primitives    | 
++------------+---------------------+-----------+----------------------+---------------+
+|DataPath    | regFile/regfile_reg | Implied   | 32 x 32              | RAM32M x 12   | 
++------------+---------------------+-----------+----------------------+---------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:14:10 ; elapsed = 00:14:34 . Memory (MB): peak = 1034.871 ; gain = 743.973
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:14:13 ; elapsed = 00:14:37 . Memory (MB): peak = 1034.871 ; gain = 743.973
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:14:13 ; elapsed = 00:14:37 . Memory (MB): peak = 1034.871 ; gain = 743.973
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:14:13 ; elapsed = 00:14:38 . Memory (MB): peak = 1034.871 ; gain = 743.973
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:14:14 ; elapsed = 00:14:38 . Memory (MB): peak = 1034.871 ; gain = 743.973
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:14:14 ; elapsed = 00:14:38 . Memory (MB): peak = 1034.871 ; gain = 743.973
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:14:14 ; elapsed = 00:14:38 . Memory (MB): peak = 1034.871 ; gain = 743.973
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |BUFG    |     2|
+|2     |CARRY4  |   351|
+|3     |DSP48E1 |     3|
+|4     |LUT1    |    66|
+|5     |LUT2    |   270|
+|6     |LUT3    |  1168|
+|7     |LUT4    |    60|
+|8     |LUT5    |   309|
+|9     |LUT6    |  3191|
+|10    |MUXF7   |  1102|
+|11    |MUXF8   |   177|
+|12    |RAM32M  |    12|
+|13    |FDRE    |  8351|
+|14    |FDSE    |     2|
+|15    |IBUF    |     5|
+|16    |OBUF    |    16|
++------+--------+------+
+
+Report Instance Areas: 
++------+------------+--------------+------+
+|      |Instance    |Module        |Cells |
++------+------------+--------------+------+
+|1     |top         |              | 15085|
+|2     |  alu       |ALU           |  1395|
+|3     |  count     |COUNT         |    61|
+|4     |  Ld_str    |LEDdata_Store |    55|
+|5     |  clk       |CLK           |    53|
+|6     |    clk_div |ClockDivider  |    53|
+|7     |  dataMem   |RAM           | 11713|
+|8     |  display   |Display       |    41|
+|9     |  pc        |PC            |  1618|
+|10    |  regFile   |RegFile       |   126|
++------+------------+--------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:14:14 ; elapsed = 00:14:38 . Memory (MB): peak = 1034.871 ; gain = 743.973
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 8 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:13:56 ; elapsed = 00:14:29 . Memory (MB): peak = 1034.871 ; gain = 380.238
+Synthesis Optimization Complete : Time (s): cpu = 00:14:14 ; elapsed = 00:14:38 . Memory (MB): peak = 1034.871 ; gain = 743.973
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 1650 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 12 instances were transformed.
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 12 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+159 Infos, 10 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:14:19 ; elapsed = 00:14:45 . Memory (MB): peak = 1034.871 ; gain = 756.781
+INFO: [Common 17-1381] The checkpoint 'C:/Users/jyh/Desktop/simpleCPU/CPU28/CPU28.runs/synth_1/DataPath.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file DataPath_utilization_synth.rpt -pb DataPath_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.171 . Memory (MB): peak = 1034.871 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Thu Feb 21 10:53:06 2019...

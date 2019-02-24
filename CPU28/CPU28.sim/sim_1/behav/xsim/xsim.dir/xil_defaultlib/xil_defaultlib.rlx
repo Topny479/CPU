@@ -1,0 +1,20 @@
+0.6
+2017.4
+Dec 15 2017
+21:07:18
+C:/Users/jyh/Desktop/simpleCPU/CPU28/CPU28.sim/sim_1/behav/xsim/glbl.v,1513215259,verilog,,,,glbl,,,,,,,,
+C:/Users/jyh/Desktop/simpleCPU/CPU28/CPU28.srcs/sources_1/imports/src/ALU.v,1550624156,verilog,,C:/Users/jyh/Desktop/simpleCPU/CPU28/CPU28.srcs/sources_1/imports/src/ALU_Controller.v,,ALU,,,,,,,,
+C:/Users/jyh/Desktop/simpleCPU/CPU28/CPU28.srcs/sources_1/imports/src/ALU_Controller.v,1550663707,verilog,,C:/Users/jyh/Desktop/simpleCPU/CPU28/CPU28.srcs/sources_1/imports/src/CLK.v,,ALU_Controller,,,,,,,,
+C:/Users/jyh/Desktop/simpleCPU/CPU28/CPU28.srcs/sources_1/imports/src/CLK.v,1550575496,verilog,,C:/Users/jyh/Desktop/simpleCPU/CPU28/CPU28.srcs/sources_1/imports/src/COUNT.v,,CLK,,,,,,,,
+C:/Users/jyh/Desktop/simpleCPU/CPU28/CPU28.srcs/sources_1/imports/src/COUNT.v,1550574570,verilog,,C:/Users/jyh/Desktop/simpleCPU/CPU28/CPU28.srcs/sources_1/imports/src/ClockDivider.v,,COUNT,,,,,,,,
+C:/Users/jyh/Desktop/simpleCPU/CPU28/CPU28.srcs/sources_1/imports/src/ClockDivider.v,1550660054,verilog,,C:/Users/jyh/Desktop/simpleCPU/CPU28/CPU28.srcs/sources_1/imports/src/Controller.v,,ClockDivider,,,,,,,,
+C:/Users/jyh/Desktop/simpleCPU/CPU28/CPU28.srcs/sources_1/imports/src/Controller.v,1550668318,verilog,,C:/Users/jyh/Desktop/simpleCPU/CPU28/CPU28.srcs/sources_1/imports/src/Display.v,,Controller,,,,,,,,
+C:/Users/jyh/Desktop/simpleCPU/CPU28/CPU28.srcs/sources_1/imports/src/DataPath.v,1550668195,verilog,,,,DataPath,,,,,,,,
+C:/Users/jyh/Desktop/simpleCPU/CPU28/CPU28.srcs/sources_1/imports/src/Display.v,1550661756,verilog,,C:/Users/jyh/Desktop/simpleCPU/CPU28/CPU28.srcs/sources_1/imports/src/LEDdata_Store.v,,Display,,,,,,,,
+C:/Users/jyh/Desktop/simpleCPU/CPU28/CPU28.srcs/sources_1/imports/src/LEDdata_Store.v,1550627348,verilog,,C:/Users/jyh/Desktop/simpleCPU/CPU28/CPU28.srcs/sources_1/imports/src/MUX.v,,LEDdata_Store,,,,,,,,
+C:/Users/jyh/Desktop/simpleCPU/CPU28/CPU28.srcs/sources_1/imports/src/MUX.v,1550667402,verilog,,C:/Users/jyh/Desktop/simpleCPU/CPU28/CPU28.srcs/sources_1/imports/src/PC.v,,mux2_1_32bit;mux2_1_5bit;mux4_1_8bit,,,,,,,,
+C:/Users/jyh/Desktop/simpleCPU/CPU28/CPU28.srcs/sources_1/imports/src/PC.v,1550645156,verilog,,C:/Users/jyh/Desktop/simpleCPU/CPU28/CPU28.srcs/sources_1/imports/src/RAM.v,,PC,,,,,,,,
+C:/Users/jyh/Desktop/simpleCPU/CPU28/CPU28.srcs/sources_1/imports/src/RAM.v,1550651006,verilog,,C:/Users/jyh/Desktop/simpleCPU/CPU28/CPU28.srcs/sources_1/imports/src/RegFile.v,,RAM,,,,,,,,
+C:/Users/jyh/Desktop/simpleCPU/CPU28/CPU28.srcs/sources_1/imports/src/RegFile.v,1550538788,verilog,,C:/Users/jyh/Desktop/simpleCPU/CPU28/CPU28.srcs/sources_1/imports/src/Rom.v,,RegFile,,,,,,,,
+C:/Users/jyh/Desktop/simpleCPU/CPU28/CPU28.srcs/sources_1/imports/src/Rom.v,1550647636,verilog,,C:/Users/jyh/Desktop/simpleCPU/CPU28/CPU28.srcs/sources_1/imports/src/Sig_Gen.v,,Rom,,,,,,,,
+C:/Users/jyh/Desktop/simpleCPU/CPU28/CPU28.srcs/sources_1/imports/src/Sig_Gen.v,1550664455,verilog,,C:/Users/jyh/Desktop/simpleCPU/CPU28/CPU28.srcs/sources_1/imports/src/DataPath.v,,Sig_Gen,,,,,,,,
